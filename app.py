@@ -219,6 +219,8 @@ def delete_game(game_id):
     return {"message": "Game deleted successfully"}, 200
 
 
+create_database()
+
+
 if __name__ == "__main__":
-    create_database()
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000) 
